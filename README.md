@@ -4,9 +4,6 @@ A wrapper for MongoDB's MongoClient that handles keeping the connection open and
 
 In Node.js applications MongoDB connections are meant to be opened once and kept opened while the Node.js app is running (http://stackoverflow.com/a/15688610/446681). This module encapsulates the logic required to do this.  
 
-Information about MongoClient and the commands that you can execute can be found here: 
-http://mongodb.github.io/node-mongodb-native/api-generated/mongoclient.html
-
 
 Installation
 ============
@@ -56,6 +53,8 @@ Syntax
   Executes a MongoDB command. This method makes sure the database connection has been opened before issuing the command. This method keeps the connection open. 
 
   * **callback** is a function that you provide. This function will be called with two parameters *err* and *db*. If the connection to the database succeeded *err* will be null, otherwise it will contain the error object returned while trying to connect. *db* is an instance of mongoClient that you can use to issue whatever command you want against MongoDB. *db* will be null if *err* is not null.
+
+  Information about MongoClient and the commands that you can execute can be found here: http://mongodb.github.io/node-mongodb-native/api-generated/mongoclient.html
 
 
 Limitations
