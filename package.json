@@ -1,6 +1,6 @@
 {
   "name": "mongoconnect",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "author": "Hector Correa <hector@hectorcorrea.com>",
   "description": "A wrapper for MongoDB's MongoClient to open the connection only once and reopen it only if closed by the server",
   "repository": {

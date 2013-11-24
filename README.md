@@ -15,13 +15,13 @@ Typical usage
 ================
 In your main server.js define the connection URL:
 
-    var mongoConnect = require('mongoConnect');
+    var mongoConnect = require('mongoconnect');
     mongoConnect.setup('mongodb://localhost:27017/yourDB');
 
 
 In your database access code (say blogModel.js) call mongoConnect.execute() to execute any MongoDB command like you would against the db object returned by MongoDB's default MongoClient.connect.
 
-    var mongoConnect = require('./mongoConnect');
+    var mongoConnect = require('./mongoconnect');
     mongoConnect.execute(function(err, db) {
       
       if(err) {

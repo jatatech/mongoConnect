@@ -1,4 +1,4 @@
-var mongoConnect = require('mongoConnect');
+var mongoConnect = require('mongoconnect');
 
 exports.getData = function(callback) {
 
