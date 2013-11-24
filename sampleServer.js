@@ -2,7 +2,7 @@
 //
 // npm install mongoConnect
 //
-var mongoConnect = require('./index');
+var mongoConnect = require('mongoConnect');
 var dbAccess = require('./sampleDbAccess');
 
 var http = require('http');
