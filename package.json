@@ -17,6 +17,6 @@
     "node": ">=0.10.9"
   },
   "dependencies": {
-    "mongodb": "^3.0.0"
+    "mongodb": "^2.2.36"
   }
 }
