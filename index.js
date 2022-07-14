@@ -9,9 +9,7 @@ var dbUrl = null;
 var isConnected = false;
 var db = null;
 var dbOptions = {
-  db: {},
-  auto_reconnect: true,
-  socketOptions: {keepAlive: 1}
+  autoReconnect: true
 };
 var log = function() {}; // by default don't log
 
