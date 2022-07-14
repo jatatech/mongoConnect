@@ -10,12 +10,8 @@ var isConnected = false;
 var db = null;
 var dbOptions = {
   db: {},
-  server: {
-    auto_reconnect: true,
-    socketOptions: {keepAlive: 1}
-  },
-  replSet: {},
-  mongos: {}
+  auto_reconnect: true,
+  socketOptions: {keepAlive: 1}
 };
 var log = function() {}; // by default don't log
 
