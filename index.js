@@ -18,7 +18,7 @@ var connectAndExecute = function(callback) {
 
   log('Connecting...');
   MongoClient.connect(dbUrl, dbOptions, function(err, dbConn) {
-    
+    //lfms_data?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin&retryWrites=true&w=majority
     if(err) {
       log('Cannot connect: ' + err);
       callback(err);
@@ -27,7 +27,7 @@ var connectAndExecute = function(callback) {
     
     log('Connected!');
     isConnected = true;
-    db = dbConn;
+    db = dbConn.db('lfms_data');
 
     // http://stackoverflow.com/a/18715857/446681
     db.on('close', function() {
